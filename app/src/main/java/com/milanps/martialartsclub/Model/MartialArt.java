@@ -7,10 +7,10 @@ public class MartialArt {
 
     private int martialArtID;
     private String martialArtName;
-    private int martialArtPrice;
+    private double martialArtPrice;
     private String martialArtColor;
 
-    public MartialArt(int id, String name, int price, String color) {
+    public MartialArt(int id, String name, double price, String color) {
         setMartialArtID(id);
         setMartialArtName(name);
         setMartialArtPrice(price);
@@ -25,7 +25,7 @@ public class MartialArt {
         return martialArtName;
     }
 
-    public int getMartialArtPrice() {
+    public double getMartialArtPrice() {
         return martialArtPrice;
     }
 
@@ -41,7 +41,7 @@ public class MartialArt {
         this.martialArtName = martialArtName;
     }
 
-    public void setMartialArtPrice(int martialArtPrice) {
+    public void setMartialArtPrice(double martialArtPrice) {
         this.martialArtPrice = martialArtPrice;
     }
 
