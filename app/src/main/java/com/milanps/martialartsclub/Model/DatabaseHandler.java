@@ -52,7 +52,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         String addMartialArtSQLCommand = "insert into " + MARTIAL_ARTS_TABLE +
                 " values(null, '" + martialArtObject.getMartialArtName() +
                 "', '" + martialArtObject.getMartialArtPrice() +
-                "', '" + martialArtObject.getMartialArtPrice() + "')";
+                "', '" + martialArtObject.getMartialArtColor() + "')";
         database.execSQL(addMartialArtSQLCommand);
         database.close();
     }

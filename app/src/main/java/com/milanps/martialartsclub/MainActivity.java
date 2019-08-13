@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.InputType;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -42,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.delete_martial_art:
                 Intent deleteMartialArtIntent = new Intent(MainActivity.this, DeleteMartialArtActivity.class);
                 startActivity(deleteMartialArtIntent);
+                return true;
+            case R.id.update_martial_art:
+                Intent updateMartialArtIntent = new Intent(MainActivity.this, UpdateMartialArtActivity.class);
+                startActivity(updateMartialArtIntent);
                 return true;
 
         }
