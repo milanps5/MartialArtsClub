@@ -34,10 +34,14 @@ public class MainActivity extends AppCompatActivity {
 
         int id = item.getItemId();
 
-        switch (id){
+        switch (id) {
             case R.id.add_martial_art:
-                Intent addMartialArtIntent=new Intent(MainActivity.this, AddMartialArtActivity.class);
+                Intent addMartialArtIntent = new Intent(MainActivity.this, AddMartialArtActivity.class);
                 startActivity(addMartialArtIntent);
+                return true;
+            case R.id.delete_martial_art:
+                Intent deleteMartialArtIntent = new Intent(MainActivity.this, DeleteMartialArtActivity.class);
+                startActivity(deleteMartialArtIntent);
                 return true;
 
         }
